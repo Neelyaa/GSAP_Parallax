@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'use-strict';
 
     Splitting();
-
-    luxy.init();
+    
     gsap.registerPlugin(ScrollTrigger);
 
     //Header

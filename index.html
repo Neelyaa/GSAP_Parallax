@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GSAP Parallax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- div .wrapp -->
+    <div id="luxy" class="wrapp">
+
+        <!-- header -->
+        <header class="header">
+            <h1 class="title" data-splitting><span class="title_parallax">Effet Parallax </span><span
+                    class="stroke">avec
+                    GSAP</span></h1>
+            <div class="header__img">
+                <img src="img/1.jpg" alt="image 1">
+            </div>
+            <div class="header__marq">
+                <div class="header__marq-wrapp">
+                    <span class="header__marq-txt">Discutons de vos idées
+                        <span class="header__marq-star">
+                            <img src="img/star.svg" alt="image 2">
+                        </span>
+                    </span>
+                    <span class="header__marq-txt">Discutons de vos idées
+                        <span class="header__marq-star">
+                            <img src="img/star.svg" alt="image 3">
+                        </span>
+                    </span>
+                    <span class="header__marq-txt">Discutons de vos idées
+                        <span class="header__marq-star">
+                            <img src="img/star.svg" alt="image 4">
+                        </span>
+                    </span>
+                    <span class="header__marq-txt">Discutons de vos idées
+                        <span class="header__marq-star">
+                            <img src="img/star.svg" alt="image 5">
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <!-- section .about -->
+            <section class="about">
+                <div class="about__wrapp">
+                    <div class="about__img">
+                        <img src="img/2.jpg" alt="2">
+                    </div>
+                    <div class="about__txt">
+                        <h2 class="section-title">À pro<span class="stroke">pos</span>
+                            <span class="section-title__square"></span>
+                        </h2>
+                        <p class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic natus
+                            assumenda enim soluta illum repudiandae fugiat illo ipsum cumque! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Labore, mollitia. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quasi, quam? Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section .description -->
+            <section class="description">
+                <div class="content">
+                    <h2 class="section-title">Descr<span class="stroke">iption</span>
+                        <span class="section-title__square"></span>
+                    </h2>
+
+                    <ul class="description__list">
+                        <li class="description__item">
+                            <span class="description__num" data-speed="-200">/01</span>
+                            <p class="description__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                                quas.</p>
+                        </li>
+                        <li class="description__item">
+                            <span class="description__num" data-speed="-150">/02</span>
+                            <p class="description__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                                quas.</p>
+                        </li>
+                        <li class="description__item">
+                            <span class="description__num" data-speed="-150">/03</span>
+                            <p class="description__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                                quas.</p>
+                        </li>
+                        <li class="description__item">
+                            <span class="description__num" data-speed="-150">/04</span>
+                            <p class="description__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                                quas.</p>
+                        </li>
+                        <li class="description__item">
+                            <span class="description__num" data-speed="-110">/05</span>
+                            <p class="description__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                                quas.</p>
+                        </li>
+                        <li class="description__item">
+                            <span class="description__num" data-speed="-200">/06</span>
+                            <p class="description__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                                quas.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- section .work -->
+            <section class="work">
+                <div class="content">
+                    <h2 class="section-title">Gal<span class="stroke">erie</span>
+                        <span class="section-title__square"></span>
+                    </h2>
+                </div>
+
+                <div class="work__wrapp">
+                    <div class="work__item" data-speed="-300">
+                        <span class="work__item-num" data-speed="-500">/001</span>
+                        <div class="work__item-img">
+                            <img src="img/3.jpg" alt="3">
+                        </div>
+                    </div>
+                    <div class="work__item" data-speed="-600">
+                        <span class="work__item-num" data-speed="-500">/002</span>
+                        <div class="work__item-img">
+                            <img src="img/4.jpg" alt="4">
+                        </div>
+                    </div>
+                    <div class="work__item" data-speed="-700">
+                        <span class="work__item-num" data-speed="-700">/003</span>
+                        <div class="work__item-img">
+                            <img src="img/5.jpg" alt="5">
+                        </div>
+                    </div>
+                    <div class="work__item" data-speed="-400">
+                        <span class="work__item-num" data-speed="-200">/004</span>
+                        <div class="work__item-img">
+                            <img src="img/6.jpg" alt="6">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section .serv -->
+            <section class="serv">
+                <div class="content">
+                    <h2 class="section-title">Serv<span class="stroke">ices</span>
+                        <span class="section-title__square"></span>
+                    </h2>
+
+                    <div class="serv__list">
+                        <div class="serv__item">
+                            <span class="serv__item-arrow" data-speed="900">
+                                <img src="img/arrow.svg" alt="logo fléche">
+                            </span>
+                            <div class="serv__item-txt">
+                                <span>
+                                    /Graphic Design
+                                </span>
+                            </div>
+                        </div>
+                        <div class="serv__item">
+                            <span class="serv__item-arrow" data-speed="500">
+                                <img src="img/arrow.svg" alt="logo fléche">
+                            </span>
+                            <div class="serv__item-txt">
+                                <span>
+                                    /UI/UX Design
+                                </span>
+                            </div>
+                        </div>
+                        <div class="serv__item">
+                            <span class="serv__item-arrow" data-speed="900">
+                                <img src="img/arrow.svg" alt="logo fléche">
+                            </span>
+                            <div class="serv__item-txt">
+                                <span>
+                                    /Web Design
+                                </span>
+                            </div>
+                        </div>
+                        <div class="serv__item">
+                            <span class="serv__item-arrow" data-speed="500">
+                                <img src="img/arrow.svg" alt="logo fléche">
+                            </span>
+                            <div class="serv__item-txt">
+                                <span>
+                                    /Brend Design
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__div">
+                <span data-speed="-300">c</span>
+                <span data-speed="100">o</span>
+                <span data-speed="300">n</span>
+                <span data-speed="-300">t</span>
+                <span data-speed="350">a</span>
+                <span data-speed="200">c</span>
+                <span data-speed="-340">t</span>
+                <span data-speed="-100">e</span>
+                <span data-speed="300">z</span>
+                &emsp;
+                <span data-speed="-300">m</span>
+                <span data-speed="350">o</span>
+                <span data-speed="200">i</span>
+            </div>
+        </footer>
+    </div>
+    <!-- div .wrapp END -->
+
+    <script src="js/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/luxy.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

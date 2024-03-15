@@ -5,11 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const lenis = new Lenis()
+    //lenis smooth scroll
+    const lenis = new Lenis({
+        lerp: 0.05,
+        smoothWheel: true,
+    });
 
-    lenis.on('scroll', (e) => {
-        console.log(e)
-    })
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
 
     lenis.on('scroll', ScrollTrigger.update)
 
@@ -17,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         lenis.raf(time * 1000)
     })
 
-    gsap.ticker.lagSmoothing(0)
 
     //Header
     const gTl = gsap.timeline();
